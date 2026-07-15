@@ -36,6 +36,9 @@
 
    # install transformers@4.55.4
    pip install "transformers==4.55.4"
+
+   # install ddgs (Dux Distributed Global Search)
+   pip install ddgs
    ```
 
    NOTE: You should see some packages being installed, on your terminal/cmd.
@@ -50,6 +53,7 @@
    - `duckduckgo-search`: for live web results
    - `python-dotenv`: for accessing environment/system tokens
    - `beautifulsoup4`: for scraping and cleaning web-page results
+   - `ddgs`: Dux Distributed Global Search &mdash; <https://pypi.org/project/ddgs/>
 
 4. Open your browser and naviagte to <https://huggingface.co> \[or search for hugging face in Google\], and login/signup to your account.
    1. Click on your avatar (top-right)
