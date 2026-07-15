@@ -1,0 +1,75 @@
+# Build Autonomous Agents w/ LangChain & Hugging Face
+
+- You'll be building small-scale agents that will help you grasp the concept of how LangChain and Hugging Face libraries can be utilized with Python3, to host an agent in your local machine.
+
+## Requirements
+
+1. Install [Python3](https://www.python.org/downloads/): Preferably 3.13+
+   - Check if you've python already installed using the command: `python3 --version` in your terminal/cmd.
+2. Create a virtual environment using python as follows:
+
+   ```sh
+   mkdir agentic-ai
+   # Navigate to the created directory using: `cd agentic-ai`
+   
+   # From inside the agentic-ai directory, create a virtual environment and name it as .venv
+   python -m venv .venv
+
+   # Activate the virtual environment
+   source .venv/bin/activate
+
+   # To deactivate the virtual environment, just do the following: source .venv/bin/deactivate
+   ```
+
+   You should something as follows in your terminal
+
+   ```terminal
+   (.venv) (base) Personal-MacBook-Pro ~/Documents/repos/personal/agentic-ai:(~|git@main!)
+   ```
+
+   The `(.venv)` in front of the terminal prompt is an indicator that the virtual environment is active. To deactivate the virtual environment, just run `source .venv/bin/deactivate`.
+
+3. Install LangChain, Hugging Face, DuckDuckGo Search, Beautiful Soup, and Python Dotenv using the following command:
+
+   ```sh
+   pip install langchain langchain-huggingface transformers duckduckgo-search python-dotenv beautifulsoup4
+   ```
+
+   NOTE: You should see some packages being installed, on your terminal/cmd.
+
+   **What are the packages related to?**
+   - `pip`: PIP Installs Packages is a python package installer
+   - `langchain`: python package for reasoning
+   - `langchain-huggingface`: used for accessing LLM models
+   - `transformers`: acts as model's engine &mdash; core computation package for LLMs
+   - `duckduckgo-search`: for live web results
+   - `python-dotenv`: for accessing environment/system tokens
+   - `beautifulsoup4`: for scraping and cleaning web-page results
+
+4. Open your browser and naviagte to <https://huggingface.co> \[or search for hugging face in Google\], and login/signup to your account.
+   1. Click on your avatar (top-right)
+   2. Navigate to `Access Tokens`
+   3. Click on `+ Create new token`
+   4. Give a name to the token in the `Token name` field
+   5. Click on `Custom` preset
+   6. In the `Inference` label, check on `Make calls to Inference Providers` checkbox
+   7. Click the `Create token` button
+   8. Copy the token presented there (it won't be shown again, ever, once you close the dialog/modal)
+   9. Then, in your terminal, type in the following, and save it to `.env` file as follows:
+
+      ```sh
+      echo "HF_TOKEN=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" > .env
+      ```
+
+5. If all the steps are followed correctly from pt. 1 to 4, you should be able to run the following command in terminal:
+
+   ```sh
+   python -c "import langchain, transformers; print('✅ Setup successful!')"
+   ```
+
+   and see something similar to the following output:
+
+   ```terminal
+   [transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+   ✅ Setup successful!
+   ```
