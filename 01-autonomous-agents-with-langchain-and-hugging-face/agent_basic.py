@@ -25,8 +25,24 @@ pipe = pipeline(
   device=-1                   # Make use of CPU, instead of GPU for consistent results
 )
 
-# 5. Send one short prompt and print 
-prompt = "Write one short sentence explaining what an AI agent does."
-res = pipe(prompt, max_new_tokens=100)
-result = res[0]["generated_text"]
-print(result)
+# 5. (Test) Send one short prompt and print 
+print("✅ Agent ready! Type a question, or 'quit' or 'exit' to stop.")
+
+# 6. Create an infinite loop, until `exit` or `quit` is typed in to stop the agent from taking input.
+while True:
+  try:
+    user_input = input("> ").strip()
+    if user_input.lower() in {"quit", "exit"}:
+      print("Goodbye!")
+      break
+    if not user_input:
+      continue
+
+    res = pipe(user_input, max_new_tokens=100)
+    # print(res) # debug line
+    result = res[0]["generated_text"]
+    print(f"🤖 Agent: {result}")
+
+  except KeyboardInterrupt:
+    print("\n (Stopped By User) Goodbye!")
+    break
