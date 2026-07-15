@@ -32,7 +32,10 @@
 3. Install LangChain, Hugging Face, DuckDuckGo Search, Beautiful Soup, and Python Dotenv using the following command:
 
    ```sh
-   pip install langchain langchain-huggingface transformers duckduckgo-search python-dotenv beautifulsoup4
+   pip install langchain langchain-huggingface huggingface-hub torch duckduckgo-search python-dotenv beautifulsoup4
+
+   # install transformers@4.55.4
+   pip install "transformers==4.55.4"
    ```
 
    NOTE: You should see some packages being installed, on your terminal/cmd.
@@ -41,6 +44,8 @@
    - `pip`: PIP Installs Packages is a python package installer
    - `langchain`: python package for reasoning
    - `langchain-huggingface`: used for accessing LLM models
+   - `huggingface-hub`: where all the open source LLMs are hosted
+   - `torch`: PyTorch package contains all the deeplearning and machine learning models
    - `transformers`: acts as model's engine &mdash; core computation package for LLMs
    - `duckduckgo-search`: for live web results
    - `python-dotenv`: for accessing environment/system tokens
@@ -75,3 +80,21 @@
    [transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
    ✅ Setup successful!
    ```
+
+## Run Basic Agent
+
+- Run the basic agent at [`agent_basic.py`](./agent_basic.py) using `python`:
+
+   ```sh
+   python agent_basic.py
+   ```
+
+   you should see the following output:
+
+   ```terminal
+   Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+   Device set to use cpu
+   An AI agent is a computer programmed to perform a task on a computer.
+   ```
+
+
