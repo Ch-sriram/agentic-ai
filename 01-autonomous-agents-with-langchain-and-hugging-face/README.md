@@ -58,8 +58,10 @@
    9. Then, in your terminal, type in the following, and save it to `.env` file as follows:
 
       ```sh
-      echo "HF_TOKEN=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" > .env
+      echo "HF_TOKEN=<secret-token>" > .env
       ```
+
+      NOTE: `<secret-token>` is the hugging face token you copied in step 8.
 
 5. If all the steps are followed correctly from pt. 1 to 4, you should be able to run the following command in terminal:
 
