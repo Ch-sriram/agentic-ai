@@ -97,4 +97,14 @@
    An AI agent is a computer programmed to perform a task on a computer.
    ```
 
+## Other Agents
 
+- There are 5 agents located in this directory itself.
+- To run each of them, just use their file names with the python command.
+- The agents are the following:
+  1. Basic Agent: run using `python agent_basic.py`
+  2. Joke Teller Agent: run using `python agent_joketeller.py`
+  3. Multi Step Agent: run using `python agent_multistep.py`
+  4. Agent with Memory and Context: run using `agent_memory.py`
+  5. Agent with Tools like Calculator: run using `python agent_tools.py`
+  6. Mini Study Buddy Agent (Contains concepts from 1-5): run using `python mini_study_buddy.py`
