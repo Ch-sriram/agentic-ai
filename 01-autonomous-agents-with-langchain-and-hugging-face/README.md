@@ -109,6 +109,6 @@
   1. Basic Agent: run using `python agent_basic.py`
   2. Joke Teller Agent: run using `python agent_joketeller.py`
   3. Multi Step Agent: run using `python agent_multistep.py`
-  4. Agent with Memory and Context: run using `agent_memory.py`
+  4. Agent with Memory and Context: run using `python agent_memory.py`
   5. Agent with Tools like Calculator: run using `python agent_tools.py`
-  6. Mini Study Buddy Agent (Contains concepts from 1-5): run using `python mini_study_buddy.py`
+  6. Mini Study Buddy Agent (Contains concepts from 1-5): run using `python agent_mini_study_buddy.py`
