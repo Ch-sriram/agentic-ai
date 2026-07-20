@@ -49,10 +49,13 @@
    > ```
    >
    > You should see a similar output:
+   >
+   > ```terminal
    > autogen-agentchat             0.5.7
    > autogen-core                  0.5.7
    > autogen-ext                   0.5.7
    > autogenstudio                 0.4.2.2
+   > ```
 
 4. Run the AutoGen Studio on port `8081`:
 
